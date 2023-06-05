@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="section-1">
+        <h1>Temperature Converter</h1>
+    </div>
+    <div class="section-2">
+        <form action="" onsubmit="calculate(); return false;">
+            <div class="section-2-1">
+            <input type="number" name="temp-1" id="temp-1" value="" onchange="inputsvalue(1);">
+            <h3>=</h3>
+            <input type="number" name="temp-2" id="temp-2" value="" onchange="inputsvalue(2);">
+            </div>
+            <div class="section-2-2">
+            <select name="unit" id="input-1" onselect="selectsvalue(1);">
+                <option id="Fahrenheit">°Fahrenheit</option>
+                <option id="Celsius">°Degree Celsius</option>
+                <option id="Kelvin">°Kelvin</option>
+            </select>
+            <select name="unit" id="input-2" onselect="selectsvalue(2);">
+                <option id="Fahrenheit">°Fahrenheit</option>
+                <option id="Celsius">°Degree Celsius</option>
+                <option id="Kelvin">°Kelvin</option>
+            </select>
+            </div>
+            <br>
+                <input type="submit" name="temp">  
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
